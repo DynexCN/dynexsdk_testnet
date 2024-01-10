@@ -1,19 +1,19 @@
-# Dynex SDK Local Testnet Sampler
-Dynex is the world’s first neuromorphic supercomputing blockchain based on the DynexSolve chip algorithm, a Proof-of-Useful-Work (PoUW) approach to solving real-world problems. The Dynex SDK is used to interact and compute on the Dynex Platform. Use this repository to enable "mainnet=False" functionality in your Dynex SDK. It allows sampling of Qubo/Ising computing problems on the local machine before computing on the Dynex Neuromorphic Computing cloud. Mainly used for prototyping and testing of code before incurring costs.
+# Dynex 开发工具本地测试
+Dynex 是世界上第一个基于 DynexSolve 芯片算法的神经形态超级计算区块链，这是一种解决现实世界问题的有用工作量证明 (PoUW) 方法。 Dynex SDK用于在Dynex平台上进行交互和计算。 使用此存储库在 Dynex SDK 中启用“mainnet=False”功能。 它允许在 Dynex 神经形态计算云上进行计算之前在本地计算机上对 Qubo/Ising 计算问题进行采样。 主要用于在产生成本之前进行原型设计和代码测试。
 
-# Build from source & Installation
+# 从源代码构建并安装
 
-Build the binary with the following commands and copy it into the folder ```/testnet``` in the directory where your Python program is located:
+使用以下命令构建二进制文件并将其复制到 Python 程序所在目录中的文件夹“``/testnet``”中：
 
 ```
-git clone https://github.com/dynexcoin/dynexsdk_testnet.git
+git clone https://github.com/DynexCN/dynexsdk_testnet.git
 ./build.sh
 cp dynex-testnet-bnb <PATH-OF-YOUR-SDK-PROGRAM>/testnet
 ```
 
-# Usage
+# 使用
 
-To enable sampling on the local machine, specify the parameter "mainnet=False":
+要在本地机器上启用采样，请指定参数“mainnet=False”：
 
 ```
 model = dynex.BQM(bqm, logging=True);
